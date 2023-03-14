@@ -80,9 +80,6 @@ const loginSchema = new mongoose.Schema({
 
 const Login = mongoose.model('Login', loginSchema);
 
-app.get("/api", (req, res) => {
-  res.send("Hi");
-})
 
 app.post("/api", async(req, res) => {
   const body = req.body;
